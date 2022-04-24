@@ -26,7 +26,7 @@ const MainHead = () => {
             </Button>
             <Button variant="outlined">Browse Games</Button>
           </Container>
-          <SwiperHead />
+          {/* <SwiperHead /> */}
         </Grid>
       </Grid>
     </Box>
