@@ -7,7 +7,7 @@ import { Button, CardActionArea } from "@mui/material";
 
 const CardItem = ({ title, thumbnail, genre, game_url }) => {
   return (
-    <Card sx={{ maxWidth: 345, padding: 1, marginBottom: 2 }}>
+    <Card sx={{ padding: 1, marginBottom: 2 }}>
       <CardActionArea>
         <CardMedia
           component="img"
