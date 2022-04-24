@@ -15,14 +15,14 @@ const SwiperHead = () => {
       <Swiper navigation={true} modules={[Navigation]}>
         <SwiperSlide>
           <img
-            src="https://images.pexels.com/photos/262333/pexels-photo-262333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="card"
+            src="https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="mario-cart"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src="https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="mario-cart"
+            src="https://images.pexels.com/photos/262333/pexels-photo-262333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="card"
           />
         </SwiperSlide>
 
