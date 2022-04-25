@@ -1,9 +1,12 @@
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import Chip from "@mui/material/Chip";
-import { Button, CardActionArea } from "@mui/material";
+import {
+  Card,
+  CardContent,
+  CardMedia,
+  Typography,
+  Chip,
+  Button,
+  CardActionArea,
+} from "@mui/material";
 
 const CardItem = ({ title, thumbnail, genre, game_url }) => {
   return (

@@ -1,5 +1,4 @@
-import { Grid, Container, Box, Typography, Button } from "@mui/material";
-import SwiperHead from "../Swiper/SwiperHead";
+import { Grid, Container, Typography, Button } from "@mui/material";
 
 const MainHead = () => {
   return (
@@ -30,7 +29,6 @@ const MainHead = () => {
             Browse Games
           </Button>
         </Container>
-        {/* <SwiperHead /> */}
       </Grid>
     </Grid>
   );

@@ -6,12 +6,15 @@ import {
   Button,
   Container,
 } from "@mui/material";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
+
+import { Link } from "react-router-dom";
+
 import IconButton from "@mui/material/IconButton";
 import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
 import SearchIcon from "@mui/icons-material/Search";
 import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import MenuIcon from "@mui/icons-material/Menu";
 
 const darkTheme = createTheme({
@@ -45,24 +48,25 @@ export default function ButtonAppBar() {
                 component="div"
                 sx={{ marginRight: 1, flexGrow: matches ? 1 : "" }}
               >
-                Gamefy
+                <Link to="/">Gamefy</Link>
               </Typography>
               <Typography
                 variant="h6"
                 component="div"
-                sx={{ marginRight: 1, display: matches ? "none" : "" }}
+                sx={{
+                  marginRight: 1,
+                  flexGrow: 1,
+                  display: matches ? "none" : "",
+                }}
               >
-                Gamelist
+                <Link to="/gamelist">Gamelist</Link>
               </Typography>
-              <Typography
-                variant="h6"
-                component="div"
-                sx={{ flexGrow: 1, display: matches ? "none" : "" }}
-              >
-                Specail
-              </Typography>
+
               <SearchIcon
-                sx={{ marginRight: 1, display: matches ? "none" : "" }}
+                sx={{
+                  marginRight: 1,
+                  display: matches ? "none" : "",
+                }}
               />
               <CardGiftcardIcon
                 sx={{ marginRight: 1, display: matches ? "none" : "" }}
