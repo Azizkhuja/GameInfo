@@ -3,7 +3,7 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-.footer-bar ul li {
+.footer-bar ul {
   list-style-type: none;
   margin: 10px 10px;
 }

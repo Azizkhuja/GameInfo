@@ -1,16 +1,11 @@
-import {
-  Typography,
-  Box,
-  Container,
-  Grid,
-  Button,
-  Divider,
-} from "@mui/material";
+import { Typography, Box, Container, Grid, Divider } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import RssFeedIcon from "@mui/icons-material/RssFeed";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Footer = () => {
+  const matches = useMediaQuery("(max-width:900px)");
   return (
     <Box sx={{ padding: 6, color: "#fff" }} className="footer-bar">
       <Container>
@@ -36,7 +31,7 @@ const Footer = () => {
               <li>Terms of Use</li>
             </ul>
           </Grid>
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={3} sx={{ display: matches ? "none" : "" }}>
             <img
               src="https://www.freetogame.com/assets/images/logo-footer.png"
               alt="footer-logo"

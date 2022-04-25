@@ -11,6 +11,8 @@ import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import SearchIcon from "@mui/icons-material/Search";
 import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const darkTheme = createTheme({
   palette: {
@@ -22,8 +24,9 @@ const darkTheme = createTheme({
 });
 
 export default function ButtonAppBar() {
+  const matches = useMediaQuery("(max-width:675px)");
   return (
-    <Box sx={{ flexGrow: 1, marginBottom: 10 }}>
+    <Box sx={{ flexGrow: 1, marginBottom: 6 }}>
       <ThemeProvider theme={darkTheme}>
         <AppBar color="primary">
           <Container>
@@ -37,18 +40,37 @@ export default function ButtonAppBar() {
               >
                 <SportsEsportsIcon fontSize="large" />
               </IconButton>
-              <Typography variant="h6" component="div" sx={{ marginRight: 1 }}>
+              <Typography
+                variant="h6"
+                component="div"
+                sx={{ marginRight: 1, flexGrow: matches ? 1 : "" }}
+              >
                 Gamefy
               </Typography>
-              <Typography variant="h6" component="div" sx={{ marginRight: 1 }}>
+              <Typography
+                variant="h6"
+                component="div"
+                sx={{ marginRight: 1, display: matches ? "none" : "" }}
+              >
                 Gamelist
               </Typography>
-              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              <Typography
+                variant="h6"
+                component="div"
+                sx={{ flexGrow: 1, display: matches ? "none" : "" }}
+              >
                 Specail
               </Typography>
-              <SearchIcon sx={{ marginRight: 1 }} />
-              <CardGiftcardIcon sx={{ marginRight: 1 }} />
-              <Button color="inherit">Login</Button>
+              <SearchIcon
+                sx={{ marginRight: 1, display: matches ? "none" : "" }}
+              />
+              <CardGiftcardIcon
+                sx={{ marginRight: 1, display: matches ? "none" : "" }}
+              />
+              <Button sx={{ display: matches ? "none" : "" }} color="inherit">
+                Login
+              </Button>
+              {matches ? <MenuIcon /> : ""}
             </Toolbar>
           </Container>
         </AppBar>
