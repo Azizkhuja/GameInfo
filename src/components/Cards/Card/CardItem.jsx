@@ -8,7 +8,7 @@ import { Button, CardActionArea } from "@mui/material";
 const CardItem = ({ title, thumbnail, genre, game_url }) => {
   return (
     <Card sx={{ padding: 1, marginBottom: 2 }}>
-      <CardActionArea>
+      <CardActionArea href={game_url} target="_blank">
         <CardMedia
           component="img"
           height="250"
