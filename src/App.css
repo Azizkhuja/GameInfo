@@ -21,3 +21,8 @@ a:hover {
 .game-list-items-anchor svg path {
   margin-top: 5px;
 }
+.gameListItems-card-parapraph {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -35,7 +35,7 @@ const GameListMainCard = () => {
           Best Free Games for PC and Browser In {fullYear}!
         </Typography>
         <Typography variant="button">
-          353 free-to-play games found in our list!
+          369 free-to-play games found in our list!
         </Typography>
       </Grid>
       {mainGames.map((mainGame) => (
