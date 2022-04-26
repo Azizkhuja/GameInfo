@@ -26,3 +26,6 @@ a:hover {
   justify-content: space-between;
   align-items: center;
 }
+.display-flex {
+  display: flex;
+}
