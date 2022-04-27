@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import ComputerIcon from "@mui/icons-material/Computer";
 import InfoIcon from "@mui/icons-material/Info";
+import ReadMore from "./ReadMore";
 
 const test = {
   id: 5,
@@ -69,19 +70,11 @@ const GameListInfoRight = ({ gameInfoRight }) => {
           >
             {gameInfoRight.title}
           </Typography>
-          <Typography sx={{ marginBottom: 1 }} variant="h5">
-            About {gameInfoRight.title}
-          </Typography>
-          <Divider />
-          <Typography sx={{ marginBottom: 3 }}>
-            {gameInfoRight.description}
-          </Typography>
-          <Divider />
 
           <br />
 
           {/* Screenshots */}
-          <Typography variant="h5" sx={{ marginTop: 3, marginBottom: 1 }}>
+          <Typography variant="h5" sx={{ marginTop: 1, marginBottom: 1 }}>
             {gameInfoRight.title} Screenshots
           </Typography>
           <Divider />
@@ -139,6 +132,14 @@ const GameListInfoRight = ({ gameInfoRight }) => {
               </Typography>
             </Grid>
           </Grid>
+          {/* About */}
+          <Typography sx={{ marginBottom: 1 }} variant="h5">
+            About {gameInfoRight.title}
+          </Typography>
+          <Divider />
+          <Typography variant="body1" sx={{ marginBottom: 3 }}>
+            <ReadMore>{gameInfoRight.description}</ReadMore>
+          </Typography>
         </Container>
       </Grid>
     </Grid>

@@ -40,7 +40,7 @@ const GameListInfoLeft = ({ gameInfoLeft }) => {
           sx={{
             marginTop: 2,
             marginBottom: 2,
-            backgroundColor: "#AAAAAA",
+            backgroundColor: "#1C1E22",
             color: "#fff",
             padding: 1,
             borderRadius: 1,
@@ -72,7 +72,9 @@ const GameListInfoLeft = ({ gameInfoLeft }) => {
           </Grid>
         </Grid>
         <Typography>{gameInfoLeft.short_description}</Typography>
+        <Divider />
         <br />
+
         {/* FAQ */}
         <Typography>
           Disclosure: Gamefy works closely with publishers and developers to
