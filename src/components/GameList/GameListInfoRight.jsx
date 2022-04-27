@@ -78,52 +78,10 @@ const GameListInfoRight = ({ gameInfoRight }) => {
           </Typography>
           <Divider />
 
-          {/* FAQ */}
-          <Typography>
-            Disclosure: Gamefy works closely with publishers and developers to
-            offer a free and rewarding experience. In order to keep everything
-            free to use we may sometimes earn a small commission from some
-            partners. Find more info in our{" "}
-            <a href="https://www.freetogame.com/faq">FAQ</a> page.
-          </Typography>
           <br />
 
-          {/* Additional info */}
-          <Typography variant="h5">Additional Information</Typography>
-          <span>
-            <InfoIcon sx={{ marginRight: 0.5, paddingTop: 1 }} />
-            Please note this Gamefy may not offer optional in-game purchases.
-          </span>
-          <Divider />
-          <Grid container sx={{ marginTop: 2 }}>
-            <Grid item xs={4}>
-              <Typography>Title</Typography>
-              <Typography>{gameInfoRight.title}</Typography>
-            </Grid>
-            <Grid item xs={4}>
-              <Typography>Developer</Typography>
-              <Typography>{gameInfoRight.developer}</Typography>
-            </Grid>
-            <Grid item xs={4}>
-              <Typography>Publisher</Typography>
-              <Typography>{gameInfoRight.publisher}</Typography>
-            </Grid>
-            <Grid item xs={4} sx={{ marginTop: 2 }}>
-              <Typography>Release Date</Typography>
-              <Typography>{gameInfoRight.release_date}</Typography>
-            </Grid>
-            <Grid item xs={4} sx={{ marginTop: 2 }}>
-              <Typography>Genre</Typography>
-              <Typography>{gameInfoRight.genre}</Typography>
-            </Grid>
-            <Grid item xs={4} sx={{ marginTop: 2 }}>
-              <Typography>Platform</Typography>
-              <Typography>{gameInfoRight.platform}</Typography>
-            </Grid>
-          </Grid>
-
           {/* Screenshots */}
-          <Typography sx={{ marginTop: 3, marginBottom: 1 }}>
+          <Typography variant="h5" sx={{ marginTop: 3, marginBottom: 1 }}>
             {gameInfoRight.title} Screenshots
           </Typography>
           <Divider />
@@ -139,6 +97,47 @@ const GameListInfoRight = ({ gameInfoRight }) => {
                 </Card>
               </Grid>
             ))}
+          </Grid>
+          <br />
+          {/* Minimum System Requirements */}
+          <Typography variant="h5">Minimum System Requirements</Typography>
+          <Grid container>
+            <Grid item xs={5} sx={{ marginBottom: 1 }}>
+              <Typography>OS</Typography>
+              <Typography>
+                {gameInfoRight.minimum_system_requirements?.os}
+              </Typography>
+            </Grid>
+            <Grid item xs={7} sx={{ marginBottom: 1 }}>
+              <Typography>Processor</Typography>
+              <Typography>
+                {gameInfoRight.minimum_system_requirements?.processor}
+              </Typography>
+            </Grid>
+            <Grid item xs={5} sx={{ marginBottom: 1 }}>
+              <Typography>Memory</Typography>
+              <Typography>
+                {gameInfoRight.minimum_system_requirements?.memory}
+              </Typography>
+            </Grid>
+            <Grid item xs={7} sx={{ marginBottom: 1 }}>
+              <Typography>Graphics</Typography>
+              <Typography>
+                {gameInfoRight.minimum_system_requirements?.graphics}
+              </Typography>
+            </Grid>
+            <Grid item xs={5}>
+              <Typography>Storage</Typography>
+              <Typography>
+                {gameInfoRight.minimum_system_requirements?.storage}
+              </Typography>
+            </Grid>
+            <Grid item xs={7}>
+              <Typography>Additional Notes</Typography>
+              <Typography>
+                Specifications may change during development
+              </Typography>
+            </Grid>
           </Grid>
         </Container>
       </Grid>
