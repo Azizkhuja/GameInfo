@@ -8,13 +8,19 @@ const GameList = () => {
   return (
     <div>
       <Header />
-      <Box sx={{ padding: 4, backgroundColor: "#2A2E33", color: "#AAAAAA" }}>
+      <Box
+        sx={{
+          padding: 4,
+          backgroundColor: "#2A2E33",
+          color: "#AAAAAA",
+        }}
+      >
         <Container>
           <GameListMainCard />
           <GameListItems />
-          <Footer />
         </Container>
       </Box>
+      <Footer />
     </div>
   );
 };

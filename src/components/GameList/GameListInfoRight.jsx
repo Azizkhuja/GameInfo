@@ -61,11 +61,10 @@ const GameListInfoRight = ({ gameInfoRight }) => {
           <Typography
             variant="h3"
             sx={{
-              backgroundColor: "#AAAAAA",
+              backgroundColor: "#1C1E22",
               color: "#fff",
               textAlign: "center",
               padding: 1,
-              marginBottom: 2,
             }}
           >
             {gameInfoRight.title}
@@ -74,7 +73,7 @@ const GameListInfoRight = ({ gameInfoRight }) => {
           <br />
 
           {/* Screenshots */}
-          <Typography variant="h5" sx={{ marginTop: 1, marginBottom: 1 }}>
+          <Typography variant="h5" sx={{ marginBottom: 1 }}>
             {gameInfoRight.title} Screenshots
           </Typography>
           <Divider />
@@ -94,39 +93,47 @@ const GameListInfoRight = ({ gameInfoRight }) => {
           <br />
           {/* Minimum System Requirements */}
           <Typography variant="h5">Minimum System Requirements</Typography>
-          <Grid container>
+          <Grid
+            container
+            sx={{
+              backgroundColor: "#1C1E22",
+              padding: 1,
+              borderRadius: 1,
+              color: "#fff",
+            }}
+          >
             <Grid item xs={5} sx={{ marginBottom: 1 }}>
-              <Typography>OS</Typography>
+              <Typography className="muted">OS</Typography>
               <Typography>
                 {gameInfoRight.minimum_system_requirements?.os}
               </Typography>
             </Grid>
             <Grid item xs={7} sx={{ marginBottom: 1 }}>
-              <Typography>Processor</Typography>
+              <Typography className="muted">Processor</Typography>
               <Typography>
                 {gameInfoRight.minimum_system_requirements?.processor}
               </Typography>
             </Grid>
             <Grid item xs={5} sx={{ marginBottom: 1 }}>
-              <Typography>Memory</Typography>
+              <Typography className="muted">Memory</Typography>
               <Typography>
                 {gameInfoRight.minimum_system_requirements?.memory}
               </Typography>
             </Grid>
             <Grid item xs={7} sx={{ marginBottom: 1 }}>
-              <Typography>Graphics</Typography>
+              <Typography className="muted">Graphics</Typography>
               <Typography>
                 {gameInfoRight.minimum_system_requirements?.graphics}
               </Typography>
             </Grid>
             <Grid item xs={5}>
-              <Typography>Storage</Typography>
+              <Typography className="muted">Storage</Typography>
               <Typography>
                 {gameInfoRight.minimum_system_requirements?.storage}
               </Typography>
             </Grid>
             <Grid item xs={7}>
-              <Typography>Additional Notes</Typography>
+              <Typography className="muted">Additional Notes</Typography>
               <Typography>
                 Specifications may change during development
               </Typography>

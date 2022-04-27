@@ -7,7 +7,10 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 const Footer = () => {
   const matches = useMediaQuery("(max-width:900px)");
   return (
-    <Box sx={{ padding: 6, color: "#fff" }} className="footer-bar">
+    <Box
+      sx={{ padding: 6, color: "#fff", backgroundColor: "#1C1E22" }}
+      className="footer-bar"
+    >
       <Container>
         <Grid container sx={{ alignItems: "center" }}>
           <Grid item xs={12} md={3}>

@@ -7,6 +7,9 @@ a {
   text-decoration: none;
   color: #fff;
 }
+.App {
+  background-color: #2a2e33;
+}
 a:hover {
   color: rgb(188, 188, 188);
 }
@@ -28,4 +31,7 @@ a:hover {
 }
 .display-flex {
   display: flex;
+}
+.muted {
+  color: #aaaaaa;
 }

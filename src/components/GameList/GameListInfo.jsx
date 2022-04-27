@@ -36,7 +36,7 @@ const GameListInfo = () => {
           </Grid>
         </Box>
       </Container>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

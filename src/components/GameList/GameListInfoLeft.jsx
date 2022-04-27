@@ -16,7 +16,7 @@ const GameListInfoLeft = ({ gameInfoLeft }) => {
           <CardMedia
             component="img"
             image={gameInfoLeft.thumbnail}
-            alt="green iguana"
+            alt={gameInfoLeft.thumbnail}
           />
         </Card>
         <Button
@@ -29,7 +29,9 @@ const GameListInfoLeft = ({ gameInfoLeft }) => {
         </Button>
 
         {/* Additional info */}
-        <Typography variant="h5">Additional Information</Typography>
+        <Typography variant="h5" sx={{ color: "#fff" }}>
+          Additional Information
+        </Typography>
         <span>
           <InfoIcon sx={{ marginRight: 0.5, paddingTop: 1 }} />
           Note Gamefy not offer optional in-game purchases.
@@ -47,27 +49,27 @@ const GameListInfoLeft = ({ gameInfoLeft }) => {
           }}
         >
           <Grid item xs={4}>
-            <Typography>Title</Typography>
+            <Typography className="muted">Title</Typography>
             <Typography>{gameInfoLeft.title}</Typography>
           </Grid>
           <Grid item xs={4}>
-            <Typography>Developer</Typography>
+            <Typography className="muted">Developer</Typography>
             <Typography>{gameInfoLeft.developer}</Typography>
           </Grid>
           <Grid item xs={4}>
-            <Typography>Publisher</Typography>
+            <Typography className="muted">Publisher</Typography>
             <Typography>{gameInfoLeft.publisher}</Typography>
           </Grid>
           <Grid item xs={4} sx={{ marginTop: 2 }}>
-            <Typography>Release Date</Typography>
+            <Typography className="muted">Release Date</Typography>
             <Typography>{gameInfoLeft.release_date}</Typography>
           </Grid>
           <Grid item xs={4} sx={{ marginTop: 2 }}>
-            <Typography>Genre</Typography>
+            <Typography className="muted">Genre</Typography>
             <Typography>{gameInfoLeft.genre}</Typography>
           </Grid>
           <Grid item xs={4} sx={{ marginTop: 2 }}>
-            <Typography>Platform</Typography>
+            <Typography className="muted">Platform</Typography>
             <Typography>{gameInfoLeft.platform}</Typography>
           </Grid>
         </Grid>
