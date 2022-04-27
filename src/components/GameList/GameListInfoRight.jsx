@@ -10,6 +10,8 @@ import {
 import ComputerIcon from "@mui/icons-material/Computer";
 import InfoIcon from "@mui/icons-material/Info";
 import ReadMore from "./ReadMore";
+const noData =
+  "Sorry at the moment we don't have a informatiom about this game or please check later!";
 
 const test = {
   id: 5,
@@ -67,7 +69,7 @@ const GameListInfoRight = ({ gameInfoRight }) => {
               padding: 1,
             }}
           >
-            {gameInfoRight.title}
+            {gameInfoRight.title || noData}
           </Typography>
 
           <br />

@@ -7,15 +7,17 @@ import {
   Divider,
 } from "@mui/material";
 import InfoIcon from "@mui/icons-material/Info";
+const noPohoto =
+  "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg";
+
 const GameListInfoLeft = ({ gameInfoLeft }) => {
-  console.log(gameInfoLeft);
   return (
     <Grid>
       <Grid item xs={12}>
         <Card sx={{ marginBottom: 2 }}>
           <CardMedia
             component="img"
-            image={gameInfoLeft.thumbnail}
+            image={gameInfoLeft.thumbnail || noPohoto}
             alt={gameInfoLeft.thumbnail}
           />
         </Card>
