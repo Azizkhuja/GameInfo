@@ -12,6 +12,7 @@ import {
 } from "@mui/material";
 
 import { GameFilter } from "./GameFilter";
+import { Link } from "react-router-dom";
 
 // const test = [
 //   {
@@ -89,32 +90,34 @@ const GameListItems = () => {
         {gameLists.map((gameListItem) => (
           <Grid item xs={12} sm={6} md={4} lg={3} key={gameListItem.id}>
             <Card>
-              <CardActionArea target="_blank">
-                <CardMedia
-                  component="img"
-                  height="250"
-                  image={gameListItem.thumbnail}
-                  alt={gameListItem.title}
-                />
-                <CardContent>
-                  <div className="gameListItems-card-parapraph">
-                    <span>{gameListItem.title}</span>
-                    <span>
-                      <Chip label="FREE" color="primary" />
-                    </span>
-                  </div>
-                  <br />
-                  <Typography
-                    variant="body2"
-                    className="gameListItems-card-parapraph"
-                  >
-                    <span>
-                      {gameListItem.platform ? "Web Browser" : "PC (Windows)"}
-                    </span>
-                    <span>{gameListItem.genre}</span>
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
+              <Link to={"/gamelist/" + gameListItem.id}>
+                <CardActionArea target="_blank">
+                  <CardMedia
+                    component="img"
+                    height="250"
+                    image={gameListItem.thumbnail}
+                    alt={gameListItem.title}
+                  />
+                  <CardContent sx={{ backgroundColor: "#32383D" }}>
+                    <div className="gameListItems-card-parapraph">
+                      <span>{gameListItem.title}</span>
+                      <span>
+                        <Chip label="FREE" color="primary" />
+                      </span>
+                    </div>
+                    <br />
+                    <Typography
+                      variant="body2"
+                      className="gameListItems-card-parapraph"
+                    >
+                      <span>
+                        {gameListItem.platform ? "Web Browser" : "PC (Windows)"}
+                      </span>
+                      <span>{gameListItem.genre}</span>
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Link>
             </Card>
           </Grid>
         ))}

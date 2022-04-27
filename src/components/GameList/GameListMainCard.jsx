@@ -51,6 +51,9 @@ const GameListMainCard = () => {
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
+                backgroundColor: "#32383D",
+                color: "#fff",
+                borderRadius: 0,
               }}
             >
               <span>{mainGame.title}</span>

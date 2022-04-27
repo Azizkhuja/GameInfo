@@ -39,17 +39,12 @@ export default function ButtonAppBar() {
                 edge="start"
                 color="inherit"
                 aria-label="menu"
-                sx={{ mr: 2 }}
               >
-                <SportsEsportsIcon fontSize="large" />
+                <Link to="/">
+                  <SportsEsportsIcon sx={{ fontSize: 30, marginTop: 1 }} />
+                </Link>
               </IconButton>
-              <Typography
-                variant="h6"
-                component="div"
-                sx={{ marginRight: 1, flexGrow: matches ? 1 : "" }}
-              >
-                <Link to="/">Gamefy</Link>
-              </Typography>
+
               <Typography
                 variant="h6"
                 component="div"

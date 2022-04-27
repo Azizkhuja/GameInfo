@@ -1,4 +1,5 @@
 import { Grid, Container, Typography, Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const MainHead = () => {
   return (
@@ -20,13 +21,13 @@ const MainHead = () => {
             free premium loot!
           </Typography>
           <Button variant="contained" sx={{ marginRight: 1 }}>
-            Get Start!
+            <Link to="/gamelist">Get Start!</Link>
           </Button>
           <Button
             variant="outlined"
             sx={{ color: "#AAAAAA", borderColor: "#AAAAAA" }}
           >
-            Browse Games
+            <Link to="/gamelist"> Browse Games</Link>
           </Button>
         </Container>
       </Grid>
