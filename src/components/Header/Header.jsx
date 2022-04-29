@@ -51,18 +51,11 @@ export default function ButtonAppBar() {
                 sx={{
                   marginRight: 1,
                   flexGrow: 1,
-                  display: matches ? "none" : "",
                 }}
               >
                 <Link to="/gamelist">Gamelist</Link>
               </Typography>
 
-              <SearchIcon
-                sx={{
-                  marginRight: 1,
-                  display: matches ? "none" : "",
-                }}
-              />
               <CardGiftcardIcon
                 sx={{ marginRight: 1, display: matches ? "none" : "" }}
               />

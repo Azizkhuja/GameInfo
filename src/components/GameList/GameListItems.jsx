@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-
+import { TextField } from "@mui/material";
 import {
   Grid,
   Card,
@@ -62,6 +62,7 @@ import { Link } from "react-router-dom";
 
 const GameListItems = () => {
   const [gameLists, setGameLists] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     const options = {
@@ -85,42 +86,71 @@ const GameListItems = () => {
   return (
     <>
       <GameFilter />
+      <TextField
+        sx={{ marginBottom: 1, backgroundColor: "#c1c1c1", padding: 1 }}
+        fullWidth
+        // label="Search"
+        color="error"
+        variant="standard"
+        className="gamelist-serach-input"
+        type="text"
+        placeholder="Search..."
+        onChange={(event) => {
+          setSearchTerm(event.target.value);
+        }}
+      />
+      {/* <input
+      className="gamelist-serach-input"
+        
+      /> */}
       {/* ListItems */}
       <Grid container spacing={2}>
-        {gameLists.map((gameListItem) => (
-          <Grid item xs={12} sm={6} md={4} lg={3} key={gameListItem.id}>
-            <Card>
-              <Link to={"/gamelist/" + gameListItem.id}>
-                <CardActionArea target="_blank">
-                  <CardMedia
-                    component="img"
-                    height="250"
-                    image={gameListItem.thumbnail}
-                    alt={gameListItem.title}
-                  />
-                  <CardContent sx={{ backgroundColor: "#32383D" }}>
-                    <div className="gameListItems-card-parapraph">
-                      <span>{gameListItem.title}</span>
-                      <span>
-                        <Chip label="FREE" color="primary" />
-                      </span>
-                    </div>
-                    <br />
-                    <Typography
-                      variant="body2"
-                      className="gameListItems-card-parapraph"
-                    >
-                      <span>
-                        {gameListItem.platform ? "Web Browser" : "PC (Windows)"}
-                      </span>
-                      <span>{gameListItem.genre}</span>
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Link>
-            </Card>
-          </Grid>
-        ))}
+        {gameLists
+          .filter((val) => {
+            if (searchTerm == "") {
+              return val;
+            } else if (
+              val.title.toLowerCase().includes(searchTerm.toLocaleLowerCase())
+            ) {
+              return val;
+            }
+          })
+          .map((gameListItem) => (
+            <Grid item xs={12} sm={6} md={4} lg={3} key={gameListItem.id}>
+              <Card>
+                <Link to={"/gamelist/" + gameListItem.id}>
+                  <CardActionArea target="_blank">
+                    <CardMedia
+                      component="img"
+                      height="250"
+                      image={gameListItem.thumbnail}
+                      alt={gameListItem.title}
+                    />
+                    <CardContent sx={{ backgroundColor: "#32383D" }}>
+                      <div className="gameListItems-card-parapraph">
+                        <span>{gameListItem.title}</span>
+                        <span>
+                          <Chip label="FREE" color="primary" />
+                        </span>
+                      </div>
+                      <br />
+                      <Typography
+                        variant="body2"
+                        className="gameListItems-card-parapraph"
+                      >
+                        <span>
+                          {gameListItem.platform
+                            ? "Web Browser"
+                            : "PC (Windows)"}
+                        </span>
+                        <span>{gameListItem.genre}</span>
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Link>
+              </Card>
+            </Grid>
+          ))}
       </Grid>
     </>
   );

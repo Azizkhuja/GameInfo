@@ -35,3 +35,6 @@ a:hover {
 .muted {
   color: #aaaaaa;
 }
+.gamelist-serach-input:focus {
+  color: #fff;
+}
