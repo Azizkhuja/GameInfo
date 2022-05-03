@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
-import { TextField } from "@mui/material";
+
 import {
   Grid,
   Card,
@@ -9,10 +10,10 @@ import {
   CardContent,
   Typography,
   Chip,
+  TextField,
 } from "@mui/material";
 
 import { GameFilter } from "./GameFilter";
-import { Link } from "react-router-dom";
 
 const GameListItems = () => {
   const [gameLists, setGameLists] = useState([]);
@@ -43,7 +44,6 @@ const GameListItems = () => {
       <TextField
         sx={{ marginBottom: 1, backgroundColor: "#c1c1c1", padding: 1 }}
         fullWidth
-        // label="Search"
         color="error"
         variant="standard"
         className="gamelist-serach-input"
@@ -53,10 +53,6 @@ const GameListItems = () => {
           setSearchTerm(event.target.value);
         }}
       />
-      {/* <input
-      className="gamelist-serach-input"
-        
-      /> */}
       {/* ListItems */}
       <Grid container spacing={2}>
         {gameLists

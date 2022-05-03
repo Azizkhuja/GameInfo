@@ -1,7 +1,6 @@
 import {
   Grid,
   Typography,
-  Button,
   Card,
   CardMedia,
   CardContent,

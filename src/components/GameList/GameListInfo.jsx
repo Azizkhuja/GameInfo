@@ -1,20 +1,19 @@
-import { Container, Grid, Box } from "@mui/material";
 import { useState, useEffect } from "react";
+import axios from "axios";
+
+import { Container, Grid, Box } from "@mui/material";
 import { useParams } from "react-router-dom";
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import GameListInfoLeft from "./GameListInfoLeft";
 import GameListInfoRight from "./GameListInfoRight";
-import axios from "axios";
+
 const GameListInfo = () => {
   let { id } = useParams();
   const [gameInfo, setGameInfo] = useState([]);
 
   const getInfo = async (name) => {
-    // const data = await fetch(`https://www.freetogame.com/api/game?id=${name}`);
-    // const response = await data.json();
-    // setGameInfo(response);
     const options = {
       method: "GET",
       url: "https://free-to-play-games-database.p.rapidapi.com/api/game",

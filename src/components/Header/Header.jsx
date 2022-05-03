@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   AppBar,
   Box,
@@ -9,11 +10,8 @@ import {
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
-import { Link } from "react-router-dom";
-
 import IconButton from "@mui/material/IconButton";
 import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
-import SearchIcon from "@mui/icons-material/Search";
 import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -26,8 +24,9 @@ const darkTheme = createTheme({
   },
 });
 
-export default function ButtonAppBar() {
+export default function Header() {
   const matches = useMediaQuery("(max-width:675px)");
+
   return (
     <Box sx={{ flexGrow: 1, marginBottom: 6 }}>
       <ThemeProvider theme={darkTheme}>
