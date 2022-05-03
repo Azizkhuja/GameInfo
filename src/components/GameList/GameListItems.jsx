@@ -14,52 +14,6 @@ import {
 import { GameFilter } from "./GameFilter";
 import { Link } from "react-router-dom";
 
-// const test = [
-//   {
-//     id: 472,
-//     title: "Jade Goddess",
-//     thumbnail: "https://www.freetogame.com/g/472/thumbnail.jpg",
-//     short_description:
-//       "Jade Goddess is a free-to-play, browser based MMO inspired by Eastern mythology.",
-//     game_url: "https://www.freetogame.com/open/jade-goddess",
-//     genre: "MMORPG",
-//     platform: "Web Browser",
-//     publisher: "101XP",
-//     developer: "101XP",
-//     release_date: "2020-06-15",
-//     freetogame_profile_url: "https://www.freetogame.com/jade-goddess",
-//   },
-//   {
-//     id: 458,
-//     title: "League of Angels - Heaven's Fury",
-//     thumbnail: "https://www.freetogame.com/g/458/thumbnail.jpg",
-//     short_description:
-//       "A free-to-play, browser-based fantasy online action RPG based loosely on Western mythology!",
-//     game_url: "https://www.freetogame.com/open/league-of-angels-heavens-fury",
-//     genre: "MMORPG",
-//     platform: "Web Browser",
-//     publisher: "Gtarcade",
-//     developer: "Yoozoo Games",
-//     release_date: "2020-01-09",
-//     freetogame_profile_url:
-//       "https://www.freetogame.com/league-of-angels-heavens-fury",
-//   },
-//   {
-//     id: 468,
-//     title: "Firestone Idle RPG",
-//     thumbnail: "https://www.freetogame.com/g/468/thumbnail.jpg",
-//     short_description:
-//       "Set in the fantasy world of Alandria, Firestone is an idle RPG in which players are tasked with building the best possible party of heroes and using them to defeat the undead and orcs that plague the world.",
-//     game_url: "https://www.freetogame.com/open/firestone-idle-rpg",
-//     genre: "Strategy",
-//     platform: "Web Browser",
-//     publisher: "Holyday Studios",
-//     developer: "Holyday Studios",
-//     release_date: "2019-09-26",
-//     freetogame_profile_url: "https://www.freetogame.com/firestone-idle-rpg",
-//   },
-// ];
-
 const GameListItems = () => {
   const [gameLists, setGameLists] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");

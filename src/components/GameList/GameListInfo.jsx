@@ -6,15 +6,33 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import GameListInfoLeft from "./GameListInfoLeft";
 import GameListInfoRight from "./GameListInfoRight";
-
+import axios from "axios";
 const GameListInfo = () => {
   let { id } = useParams();
   const [gameInfo, setGameInfo] = useState([]);
 
   const getInfo = async (name) => {
-    const data = await fetch(`https://www.freetogame.com/api/game?id=${name}`);
-    const response = await data.json();
-    setGameInfo(response);
+    // const data = await fetch(`https://www.freetogame.com/api/game?id=${name}`);
+    // const response = await data.json();
+    // setGameInfo(response);
+    const options = {
+      method: "GET",
+      url: "https://free-to-play-games-database.p.rapidapi.com/api/game",
+      params: { id: name },
+      headers: {
+        "X-RapidAPI-Host": "free-to-play-games-database.p.rapidapi.com",
+        "X-RapidAPI-Key": "5275a8e1dcmshe6cde61534690eap13333ejsncffe8ac2d285",
+      },
+    };
+
+    axios
+      .request(options)
+      .then(function (response) {
+        setGameInfo(response.data);
+      })
+      .catch(function (error) {
+        console.error(error);
+      });
   };
 
   useEffect(() => {
