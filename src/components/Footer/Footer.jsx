@@ -6,6 +6,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Footer = () => {
   const matches = useMediaQuery("(max-width:900px)");
+  let fullYear = new Date().getFullYear();
   return (
     <Box
       sx={{ padding: 6, color: "#fff", backgroundColor: "#1C1E22" }}
