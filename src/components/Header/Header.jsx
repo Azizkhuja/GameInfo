@@ -59,7 +59,7 @@ export default function Header() {
                 sx={{ marginRight: 1, display: matches ? "none" : "" }}
               />
               <Button sx={{ display: matches ? "none" : "" }} color="inherit">
-                Login
+                Get info
               </Button>
               {matches ? <MenuIcon /> : ""}
             </Toolbar>
