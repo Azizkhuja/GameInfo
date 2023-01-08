@@ -47,8 +47,8 @@ const Footer = () => {
         <Grid container sx={{ alignItems: "center" }}>
           <Grid item xs={12} md={8}>
             <Typography variant="body2" sx={{ color: "#AAAAAA" }}>
-              Digiwalls Media, all rights reserved. All trademarks are property
-              of their respective owners & {fullYear}&copy;
+              iPro Group, all rights reserved. All trademarks are property of
+              their respective owners & {fullYear}&copy;
             </Typography>
           </Grid>
           <Grid item xs={12} md={4}>
