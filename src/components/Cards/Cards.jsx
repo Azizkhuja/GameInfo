@@ -107,7 +107,7 @@ const Cards = () => {
               </Typography>
               <Box sx={{ marginTop: 1 }}>
                 <Button variant="contained" sx={{ marginRight: 2 }}>
-                  Join Now
+                  <Link to="/gamelist">Join Now</Link>
                 </Button>
                 <Button
                   variant="outlined"
