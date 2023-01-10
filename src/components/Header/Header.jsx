@@ -55,7 +55,7 @@ export default function Header() {
                 <Link to="/gamelist">Gamelist</Link>
               </Typography>
 
-              <CardGiftcardIcon
+              <ImportContactsIcon
                 sx={{ marginRight: 1, display: matches ? "none" : "" }}
               />
               <Button sx={{ display: matches ? "none" : "" }} color="inherit">
