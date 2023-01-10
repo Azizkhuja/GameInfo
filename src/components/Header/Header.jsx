@@ -12,7 +12,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 
 import IconButton from "@mui/material/IconButton";
 import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
-import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
+import ImportContactsIcon from "@mui/icons-material/ImportContacts";
 import MenuIcon from "@mui/icons-material/Menu";
 
 const darkTheme = createTheme({
