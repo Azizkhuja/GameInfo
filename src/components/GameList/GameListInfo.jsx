@@ -20,7 +20,7 @@ const GameListInfo = () => {
       params: { id: name },
       headers: {
         "X-RapidAPI-Host": "free-to-play-games-database.p.rapidapi.com",
-        "X-RapidAPI-Key": "5275a8e1dcmshe6cde61534690eap13333ejsncffe8ac2d285",
+        "X-RapidAPI-Key": import.meta.env.VITE_REACT_APP_GAMEFY_KEY,
       },
     };
 
