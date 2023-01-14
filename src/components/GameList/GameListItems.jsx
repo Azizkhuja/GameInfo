@@ -19,6 +19,20 @@ const GameListItems = () => {
   const [gameLists, setGameLists] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
+  const getGameList = async () => {
+    try {
+      const options = {
+        method: "GET",
+        url: "https://free-to-play-games-database.p.rapidapi.com/api/games",
+        headers: {
+          "X-RapidAPI-Host": "free-to-play-games-database.p.rapidapi.com",
+          "X-RapidAPI-Key": import.meta.env.VITE_REACT_APP_GAMEFY_KEY,
+        },
+      };
+      const response = await axios.request(options);
+      setGameLists(response.data);
+    } 
+  };
   return (
     <>
       <GameFilter />
