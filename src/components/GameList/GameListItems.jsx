@@ -35,7 +35,9 @@ const GameListItems = () => {
     }
   };
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    getGameList();
+  }, []);
   return (
     <>
       <GameFilter />
