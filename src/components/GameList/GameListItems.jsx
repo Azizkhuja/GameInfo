@@ -31,7 +31,9 @@ const GameListItems = () => {
       };
       const response = await axios.request(options);
       setGameLists(response.data);
-    } 
+    } catch (error) {
+      console.error(error);
+    }
   };
   return (
     <>
