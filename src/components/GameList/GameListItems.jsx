@@ -19,25 +19,6 @@ const GameListItems = () => {
   const [gameLists, setGameLists] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
-  useEffect(() => {
-    const options = {
-      method: "GET",
-      url: "https://free-to-play-games-database.p.rapidapi.com/api/games",
-      headers: {
-        "X-RapidAPI-Host": "free-to-play-games-database.p.rapidapi.com",
-        "X-RapidAPI-Key": import.meta.env.VITE_REACT_APP_GAMEFY_KEY,
-      },
-    };
-
-    axios
-      .request(options)
-      .then(function (response) {
-        setGameLists(response.data);
-      })
-      .catch(function (error) {
-        console.error(error);
-      });
-  }, []);
   return (
     <>
       <GameFilter />
