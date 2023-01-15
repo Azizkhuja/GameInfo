@@ -1,7 +1,7 @@
 import { Typography, Box, Container, Grid, Divider } from "@mui/material";
 import Github from "@mui/icons-material/Github";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import RssFeedIcon from "@mui/icons-material/RssFeed";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Footer = () => {
