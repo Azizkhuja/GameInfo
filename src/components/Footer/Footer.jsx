@@ -1,5 +1,5 @@
 import { Typography, Box, Container, Grid, Divider } from "@mui/material";
-import FacebookIcon from "@mui/icons-material/Facebook";
+import Github from "@mui/icons-material/Github";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import RssFeedIcon from "@mui/icons-material/RssFeed";
 import useMediaQuery from "@mui/material/useMediaQuery";
