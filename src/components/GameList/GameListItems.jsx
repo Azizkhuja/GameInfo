@@ -18,6 +18,7 @@ import { GameFilter } from "./GameFilter";
 const GameListItems = () => {
   const [gameLists, setGameLists] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+
   const getGameList = async () => {
     try {
       const options = {
@@ -38,6 +39,7 @@ const GameListItems = () => {
   useEffect(() => {
     getGameList();
   }, []);
+
   return (
     <>
       <GameFilter />
