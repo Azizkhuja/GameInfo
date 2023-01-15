@@ -1,5 +1,5 @@
 import { Typography, Box, Container, Grid, Divider } from "@mui/material";
-import Github from "@mui/icons-material/Github";
+import GithubIcon from "@mui/icons-material/Github";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -54,7 +54,7 @@ const Footer = () => {
           <Grid item xs={12} md={4}>
             <ul className="footer-bar-social">
               <li>
-                <Github fontSize="large" />
+                <GithubIcon fontSize="large" />
               </li>
               <li>
                 <LinkedInIcon fontSize="large" />
