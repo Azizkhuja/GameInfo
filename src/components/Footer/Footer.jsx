@@ -60,7 +60,7 @@ const Footer = () => {
                 <TwitterIcon fontSize="large" />
               </li>
               <li>
-                <RssFeedIcon fontSize="large" />
+                <LinkedInIcon fontSize="large" />
               </li>
             </ul>
           </Grid>
