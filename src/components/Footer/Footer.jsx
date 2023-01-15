@@ -57,10 +57,10 @@ const Footer = () => {
                 <Github fontSize="large" />
               </li>
               <li>
-                <TwitterIcon fontSize="large" />
+                <LinkedInIcon fontSize="large" />
               </li>
               <li>
-                <LinkedInIcon fontSize="large" />
+                <TwitterIcon fontSize="large" />
               </li>
             </ul>
           </Grid>
