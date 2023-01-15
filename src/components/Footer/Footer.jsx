@@ -54,7 +54,7 @@ const Footer = () => {
           <Grid item xs={12} md={4}>
             <ul className="footer-bar-social">
               <li>
-                <FacebookIcon fontSize="large" />
+                <Github fontSize="large" />
               </li>
               <li>
                 <TwitterIcon fontSize="large" />
