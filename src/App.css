@@ -21,6 +21,9 @@ a:hover {
   display: flex;
   justify-content: flex-end;
 }
+.footer-bar-social li {
+  margin-left: 10px;
+}
 .game-list-items-anchor svg path {
   margin-top: 5px;
 }
