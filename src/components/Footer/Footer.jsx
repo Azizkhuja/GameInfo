@@ -53,13 +53,13 @@ const Footer = () => {
           </Grid>
           <Grid item xs={12} md={4}>
             <ul className="footer-bar-social">
-              <li className="footer-bar-social-icon">
+              <li>
                 <GithubIcon fontSize="large" />
               </li>
-              <li className="footer-bar-social-icon">
+              <li>
                 <LinkedInIcon fontSize="large" />
               </li>
-              <li className="footer-bar-social-icon">
+              <li>
                 <TwitterIcon fontSize="large" />
               </li>
             </ul>
