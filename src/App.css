@@ -11,7 +11,7 @@ a {
   background-color: #2a2e33;
 }
 a:hover {
-  color: rgb(188, 188, 188);
+  color: rgb(195, 195, 195);
 }
 .footer-bar ul {
   list-style-type: none;
@@ -24,6 +24,10 @@ a:hover {
 .footer-bar-social li {
   margin-left: 10px;
   cursor: pointer;
+  transition: all 0.5s;
+}
+.footer-bar-social li:hover {
+  color: rgb(151, 150, 150);
 }
 .game-list-items-anchor svg path {
   margin-top: 5px;
