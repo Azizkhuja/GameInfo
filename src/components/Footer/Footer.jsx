@@ -54,7 +54,9 @@ const Footer = () => {
           <Grid item xs={12} md={4}>
             <ul className="footer-bar-social">
               <li>
-                <GithubIcon fontSize="large" />
+                <a href="https://github.com/azizkhuja" target="_blank">
+                  <GithubIcon fontSize="large" />
+                </a>
               </li>
               <li>
                 <LinkedInIcon fontSize="large" />
