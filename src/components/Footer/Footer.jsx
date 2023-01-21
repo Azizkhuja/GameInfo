@@ -64,7 +64,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <TwitterIcon fontSize="large" />
+                <a href="https://twitter.com/aziz_ipro" target="_blank">
+                  <TwitterIcon fontSize="large" />
+                </a>
               </li>
             </ul>
           </Grid>
