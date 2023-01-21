@@ -69,7 +69,7 @@ const GameListItems = () => {
           })
           .map((gameListItem) => (
             <Grid item xs={12} sm={6} md={4} lg={3} key={gameListItem.id}>
-              <Card>
+              <Card sx={{ backgroundColor: "#32383D" }}>
                 <Link to={"/gamelist/" + gameListItem.id}>
                   <CardActionArea target="_blank">
                     <CardMedia
