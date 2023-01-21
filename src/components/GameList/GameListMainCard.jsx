@@ -39,7 +39,7 @@ const GameListMainCard = () => {
       </Grid>
       {mainGames.map((mainGame) => (
         <Grid item xs={12} sm={6} md={4} lg={4} key={mainGame.id}>
-          <Card sx={{ maxWidth: 345 }}>
+          <Card sx={{ maxWidth: 345, backgroundColor: "#32383D" }}>
             <CardMedia
               component="img"
               image={mainGame.url}
