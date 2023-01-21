@@ -59,7 +59,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <LinkedInIcon fontSize="large" />
+                <a href="https://bit.ly/3Bx0mo3" target="_blank">
+                  <LinkedInIcon fontSize="large" />
+                </a>
               </li>
               <li>
                 <TwitterIcon fontSize="large" />
