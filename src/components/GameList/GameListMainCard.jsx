@@ -12,11 +12,13 @@ const mainGames = [
     id: 1,
     title: "Dota 2",
     url: "https://www.freetogame.com/g/229/thumbnail.jpg",
+    place: "https://www.dota2.com/home",
   },
   {
     id: 2,
     title: "World of Tanks",
     url: "https://www.freetogame.com/g/2/thumbnail.jpg",
+    place: "https://worldoftanks.eu/",
   },
   {
     id: 3,
