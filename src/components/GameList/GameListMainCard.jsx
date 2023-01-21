@@ -22,6 +22,7 @@ const mainGames = [
     id: 3,
     title: "Dark Knight",
     url: "https://www.freetogame.com/g/445/thumbnail.jpg",
+    place: "https://dk.opogame.com/",
   },
 ];
 
