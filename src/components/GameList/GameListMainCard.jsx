@@ -5,6 +5,7 @@ import {
   CardMedia,
   CardContent,
   Chip,
+  Link,
 } from "@mui/material";
 
 const mainGames = [
@@ -42,26 +43,28 @@ const GameListMainCard = () => {
       </Grid>
       {mainGames.map((mainGame) => (
         <Grid item xs={12} sm={6} md={4} lg={4} key={mainGame.id}>
-          <Card sx={{ maxWidth: 345, backgroundColor: "#32383D" }}>
-            <CardMedia
-              component="img"
-              image={mainGame.url}
-              alt={mainGame.title}
-            />
-            <CardContent
-              sx={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                backgroundColor: "#32383D",
-                color: "#fff",
-                borderRadius: 0,
-              }}
-            >
-              <span>{mainGame.title}</span>
-              <Chip label="FREE" color="primary" />
-            </CardContent>
-          </Card>
+          <Link>
+            <Card sx={{ maxWidth: 345, backgroundColor: "#32383D" }}>
+              <CardMedia
+                component="img"
+                image={mainGame.url}
+                alt={mainGame.title}
+              />
+              <CardContent
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  backgroundColor: "#32383D",
+                  color: "#fff",
+                  borderRadius: 0,
+                }}
+              >
+                <span>{mainGame.title}</span>
+                <Chip label="FREE" color="primary" />
+              </CardContent>
+            </Card>
+          </Link>
         </Grid>
       ))}
     </Grid>
