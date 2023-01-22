@@ -42,7 +42,9 @@ const GameListItems = () => {
 
   return (
     <>
-      <Typography variant="h4">Search by name</Typography>
+      <Typography variant="h4" sx={{ marginTop: 3, marginBottom: 3 }}>
+        Search by name
+      </Typography>
       <TextField
         sx={{ marginBottom: 1, backgroundColor: "#c1c1c1", padding: 1 }}
         fullWidth
