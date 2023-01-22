@@ -42,7 +42,6 @@ const GameListItems = () => {
 
   return (
     <>
-      <GameFilter />
       <TextField
         sx={{ marginBottom: 1, backgroundColor: "#c1c1c1", padding: 1 }}
         fullWidth
