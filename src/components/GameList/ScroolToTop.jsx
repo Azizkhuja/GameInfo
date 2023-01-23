@@ -11,6 +11,7 @@ const ScroolToTop = () => {
       setVisible(false);
     }
   };
+  const scrollToTop = () => {};
   return <div>ScroolToTop</div>;
 };
 
