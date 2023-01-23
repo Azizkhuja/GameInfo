@@ -21,7 +21,11 @@ const ScroolToTop = () => {
 
   window.addEventListener("scroll", toggleVisible);
 
-  return <div>ScroolToTop</div>;
+  return (
+    <div>
+      <NorthIcon onClick={scrollToTop} />
+    </div>
+  );
 };
 
 export default ScroolToTop;
