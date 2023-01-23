@@ -17,6 +17,9 @@ const ScroolToTop = () => {
       behavior: "smooth",
     });
   };
+
+  window.addEventListener("scroll", toggleVisible);
+
   return <div>ScroolToTop</div>;
 };
 
