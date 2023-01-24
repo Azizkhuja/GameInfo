@@ -23,7 +23,10 @@ const ScroolToTop = () => {
 
   return (
     <div>
-      <NorthIcon onClick={scrollToTop} />
+      <NorthIcon
+        onClick={scrollToTop}
+        style={{ display: visible ? "inline" : "none" }}
+      />
     </div>
   );
 };
