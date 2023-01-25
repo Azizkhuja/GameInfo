@@ -14,6 +14,7 @@ import {
 } from "@mui/material";
 
 import { GameFilter } from "./GameFilter";
+import ScroolToTop from "./ScroolToTop";
 
 const GameListItems = () => {
   const [gameLists, setGameLists] = useState([]);
@@ -42,6 +43,7 @@ const GameListItems = () => {
 
   return (
     <>
+      <ScroolToTop />
       <Typography variant="h4" sx={{ marginTop: 3, marginBottom: 3 }}>
         Search by name
       </Typography>
