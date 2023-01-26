@@ -35,13 +35,13 @@ const ScroolToTop = () => {
 export const Button = styled.div`
   position: fixed;
   width: 100%;
-  left: 50%;
+  left: 93%;
   bottom: 40px;
-  height: 20px;
+  height: 60px;
   font-size: 3rem;
   z-index: 1;
   cursor: pointer;
-  color: green;
+  color: white;
 `;
 
 export default ScroolToTop;
