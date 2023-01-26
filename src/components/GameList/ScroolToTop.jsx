@@ -1,17 +1,20 @@
 import { useState } from "react";
 import styled from "styled-components";
 import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
+
 const ScroolToTop = () => {
   const [visible, setVisible] = useState(false);
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 300) {
+
+    if (scrolled > 1500) {
       setVisible(true);
-    } else if (scrolled <= 300) {
+    } else if (scrolled <= 1500) {
       setVisible(false);
     }
   };
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
