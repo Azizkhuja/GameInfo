@@ -8,9 +8,9 @@ const ScroolToTop = () => {
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
 
-    if (scrolled > 1500) {
+    if (scrolled > 1000) {
       setVisible(true);
-    } else if (scrolled <= 1500) {
+    } else if (scrolled <= 1000) {
       setVisible(false);
     }
   };
@@ -27,9 +27,8 @@ const ScroolToTop = () => {
   return (
     <Button>
       <ArrowCircleUpIcon
-        fontSize="large"
         onClick={scrollToTop}
-        style={{ display: visible ? "inline" : "none" }}
+        style={{ display: visible ? "inline" : "none", fontSize: 50 }}
       />
     </Button>
   );
@@ -43,7 +42,7 @@ export const Button = styled.div`
   height: 50px;
   z-index: 1;
   cursor: pointer;
-  color: white;
+  color: #dbdbdb;
 `;
 
 export default ScroolToTop;
