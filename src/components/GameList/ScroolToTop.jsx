@@ -23,12 +23,12 @@ const ScroolToTop = () => {
   window.addEventListener("scroll", toggleVisible);
 
   return (
-    <div>
+    <Button>
       <NorthIcon
         onClick={scrollToTop}
         style={{ display: visible ? "inline" : "none" }}
       />
-    </div>
+    </Button>
   );
 };
 
