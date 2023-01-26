@@ -24,6 +24,7 @@ const ScroolToTop = () => {
   return (
     <Button>
       <ArrowCircleUpIcon
+        fontSize="large"
         onClick={scrollToTop}
         style={{ display: visible ? "inline" : "none" }}
       />
@@ -34,10 +35,9 @@ const ScroolToTop = () => {
 export const Button = styled.div`
   position: fixed;
   width: 100%;
-  left: 93%;
-  bottom: 40px;
-  height: 60px;
-  font-size: 3rem;
+  left: 94%;
+  bottom: 20px;
+  height: 50px;
   z-index: 1;
   cursor: pointer;
   color: white;
