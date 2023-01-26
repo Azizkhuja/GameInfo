@@ -1,7 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import NorthIcon from "@mui/icons-material/North";
-
+import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
 const ScroolToTop = () => {
   const [visible, setVisible] = useState(false);
 
@@ -24,7 +23,7 @@ const ScroolToTop = () => {
 
   return (
     <Button>
-      <NorthIcon
+      <ArrowCircleUpIcon
         onClick={scrollToTop}
         style={{ display: visible ? "inline" : "none" }}
       />
