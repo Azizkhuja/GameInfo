@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import ScroolToTop from "./ScroolToTop";
 
 import {
   Grid,
@@ -12,9 +13,6 @@ import {
   Chip,
   TextField,
 } from "@mui/material";
-
-import { GameFilter } from "./GameFilter";
-import ScroolToTop from "./ScroolToTop";
 
 const GameListItems = () => {
   const [gameLists, setGameLists] = useState([]);
