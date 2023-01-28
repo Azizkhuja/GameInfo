@@ -97,7 +97,7 @@ const Cards = () => {
                 alignItems: matches ? "center" : "basline",
               }}
             >
-              <Typography variant="h5">More Fun and More Rewarding!</Typography>
+              <Typography variant="h5">More fun and more Rewarding!</Typography>
               <Typography variant="">
                 We are Gamefy, a new gaming platform that brings all the best
                 Free-to-Play Multiplayer Games and MMO Games into one place
