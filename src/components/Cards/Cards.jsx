@@ -98,7 +98,7 @@ const Cards = () => {
               }}
             >
               <Typography variant="h5">More fun and more Rewarding!</Typography>
-              <Typography variant="">
+              <Typography>
                 We are Gamefy, a new gaming platform that brings all the best
                 Free-to-Play Multiplayer Games and MMO Games into one place
                 while rewarding gamers with free premium loot and exlusive
