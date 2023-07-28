@@ -6,5 +6,5 @@
 #### In this application you can get information about last game and Minimum System Requirements information
 
 ### Tech Stack
-`React.js`, `React-Router`, `Material UI`, `React-icons`, `Axios` and `Vite.js`.
+`React.js`, `React-Router`, `Material UI`, `React-icons`, `Axios` and `Vite.js`
 
