@@ -1,5 +1,5 @@
 ## GameInfo
-[Link to DEMO!](https://gamefy.netlify.app/)
+[Link to DEMO](https://gamefy.netlify.app/)
 
 ![Screenshot](demo.png)
 #### Find & track the best free-to-play games!  Track what you've played and search for what to play next! 
